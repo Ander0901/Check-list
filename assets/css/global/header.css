@@ -1,0 +1,182 @@
+/* geral*/
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1248px;
+}
+/* Logo */
+.content .img {
+    grid-column: 1;
+}
+.content img {
+    width: 70px;
+}
+/* Titulo */
+h1 {
+    font-size: 2rem;
+    grid-column: 2;
+    justify-self: center;
+}
+/* usuarios */
+.user {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: right;
+    margin-right: 20px;
+    margin-bottom: 45px;
+}
+.user summary img {
+    width: 50px;
+}
+.user img{
+    width: 40px;
+}
+.user details{
+    position: absolute;
+    cursor: pointer;
+}
+.user details input{
+    display: none;
+}
+.user details:open{
+    display: block;
+}
+.user details:open .caixaUser {
+    background-color:#2196f3;
+    border-radius: 30px;
+    right: 0;
+    margin-right: 20px;
+}
+.user details:open .caixaUser img {
+    background-color:#2196f3;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.user details .caixaUser img:hover{
+    background-color: #0b63ac;
+    padding: 5px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.user label div {
+    display: flex;
+    align-items: center;
+    justify-self: right;
+}
+.user label p {
+    display: none;
+}
+.user details label div:hover p {
+    display: block;
+    position: absolute;
+    right: 70px;
+    background-color: #2196f3;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+/* menu*/
+.menu {
+    position: relative;
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: right;
+    margin-right: 50px;
+}
+.menu img {
+    width: 20px;
+    cursor: pointer;
+}
+.menu .menuList {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  
+}
+.menu .menuList li {
+    margin: 5px 0;
+}
+.menu .menuList a {
+    color: white;
+}
+.menu.ativo .menuList {
+    display: block;   
+}
+/* Opções */
+.opções {
+    margin-top: 20px;
+    grid-column: 1/4;
+    display: flex;
+    position: relative;
+}
+.opções a {
+    color: white;
+}
+.opções div {
+ padding-bottom: 5px;
+}
+.opções .index a {
+    background-color: #2196f3;
+    padding:6px 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .index a:hover {
+    padding-top: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .fazer a{
+    background-color: tomato;
+    padding:6px 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .fazer a:hover {
+    padding-top: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .andamento a {
+    background-color: tan;
+    padding:6px 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .andamento a:hover {
+    padding-top: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .concluido a {
+    background-color: #2196f3;
+    padding:6px 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+.opções .concluido a:hover {
+    padding-top: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.3s;
+}
+/* em escalas menores*/
+@media (max-width: 1268px) {
+  .content {
+    width: 815px;
+  }
+}
+@media (max-width: 858px) {
+    .content {
+        width: auto;
+        margin:0 20px;
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.fonte1 {
+    font-family: 'Poppins', sans-serif;
+}
+.fonte2 {
+    font-family: 'Nunito', sans-serif;
+}
+.fonte3 {
+    font-family: 'Montserrat', sans-serif;
+}
+.fonte4 {
+    font-family: 'Lato', sans-serif;
+}
+.fonte5 {
+    font-family: 'Open Sans', sans-serif;
+}
+.fonte6 {
+    font-family: 'Roboto', sans-serif;
+}

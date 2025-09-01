@@ -1,0 +1,18 @@
+#e28000
+
+#ff9800
+
+#ffc340
+
+#137fd9
+
+#2196f3
+
+<div class="legenda"> 
+                <label for="And"><input type="radio" value="And" name="user" id="And">Anderson</label>
+                <Label for="alex"><input type="radio" value="alex" name="user" id="alex">Alex</Label>
+                <Label for="scot"><input type="radio" value="scot" name="user" id="scot">Vinicius</Label>
+                <Label for="duda"><input type="radio" value="duda" name="user" id="duda">Eduarda</Label>
+                <Label for="teu"><input type="radio" value="teu" name="user" id="teu">Téu</Label>
+                <Label for="sandro"><input type="radio" value="sandro" name="user" id="sandro">Sandro</Label>
+            </div>

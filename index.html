@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <link rel="icon" type="image/png" href="./assets/img/global/checkListIcon.png">
+    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <!-- Logo -->
+            <div class="img">
+                <img src="./assets/img/global/verificacao-da-lista-da-area-de-transferencia.png" 
+                     alt="icone de check list em miniatura" width="100px">
+            </div>
+
+            <!-- Título -->
+            <div class="title">
+                <h1>Check List</h1>
+            </div>
+
+            <!-- Seleção de usuário -->
+            <div class="user">
+                <details>
+                    <summary>
+                        <img src="./assets/img/page/index/user.png" alt="Icone de usuario padrão" id="iconeResumo">
+                    </summary>
+                    <div class="caixaUser">
+                        <!-- Cada usuário -->
+                        <label for="cavalo">
+                            <input type="radio" name="user" id="cavalo" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_c">Vincius</p>
+                                <img src="./assets/img/page/index/Cavalo.png" alt="icone de cavalo cartoon">
+                            </div>
+                        </label>
+                        <label for="doninha">
+                            <input type="radio" name="user" id="doninha" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_d">Anderson</p>
+                                <img src="./assets/img/page/index/doninha.png" alt="Icone de doninha cartoon">
+                            </div>
+                        </label>
+                        <label for="gato">
+                            <input type="radio" name="user" id="gato" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_g">Alex</p>
+                                <img src="./assets/img/page/index/gato.png" alt="icone de gato cartoon">
+                            </div>
+                        </label>
+                        <label for="pinguim">
+                            <input type="radio" name="user" id="pinguim" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_p">Eduarda</p>
+                                <img src="./assets/img/page/index/Pinguim.png" alt="Icone de pinguim cartoon">
+                            </div>
+                        </label>
+                        <label for="raposa">
+                            <input type="radio" name="user" id="raposa" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_r">Alexsandro</p>
+                                <img src="./assets/img/page/index/raposa.png" alt="icone de raposa cartoon">
+                            </div>
+                        </label>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+                <div class="img" onclick="toggleMenu()">
+                    <img src="./assets/img/global/menu-hamburguer.png" alt="Menu menu-hamburguer" width="50px">
+                </div>
+                <ul class="menuList">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">notes</a></li>
+                </ul>
+            </div>
+
+            <!-- Opções de navegação -->
+            <div class="opções">
+                <div class="index"><a href="index.html">Check List</a></div>
+                <div class="fazer"><a href="./assets/page/fazer.html">Tarefas a fazer</a></div>
+                <div class="andamento"><a href="./assets/page/andamento.html">Tarefas em andamento</a></div>
+                <div class="concluido"><a href="./assets/page/concluido.html">Tarefas concluídas</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Botão para adicionar nova checklist -->
+            <div class="novaCheckList">
+                <details>
+                    <summary>+ Adicionar check list</summary>
+                    <label for="check">
+                        <input type="text" id="text" placeholder="Nome da checklist">
+                        <button onclick="duplicarChecklist()">Adicionar</button>
+                    </label>
+                </details>
+            </div>
+        <section class="section1">
+            <div class="checkList">
+            <h2>Exemplo</h2>
+            <ul class="tarefas"><li>
+            <div class="conteinerItens">
+                <button class="excluirItens" onclick="excluir(this)">
+                <img src="./assets/img/page/index/lixeira-de-reciclagem.png">
+                </button>
+                <input type="checkbox" id="Exemplo_1756730629607">
+                <label for="Exemplo_1756730629607">Exemplo</label>
+                <p id="Exemplo_1756730629607_hora"></p>
+                <span class="userIcon"></span>
+                <button class="adicionarUser" onclick="adicionarMembros(this)">
+                <img src="./assets/img/page/index/mais.png" alt="Mais">
+                </button>
+                <details><summary>Obs</summary><textarea rows="3"></textarea></details>
+            </div>
+            </li></ul>
+            <details class="adicionar" open="">
+                <summary>+ Adicionar item a lista</summary>
+                <input type="text" class="novoItem" placeholder="Nova tarefa">
+                <button onclick="adicionarItem(this)">Adicionar</button>
+            </details>
+            <button onclick="limpar(this)">Limpar lista</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Colégio Humboldt. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./assets/js/page/index/index.js"></script>
+</body>
+</html>
