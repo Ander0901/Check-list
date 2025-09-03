@@ -110,17 +110,66 @@ h1 {
 /* Nova Check List */
 .novaCheckList {
     display: flex;
-    margin: 5px;
+    margin: 6px;
     margin-top: 20px;
 }
 .novaCheckList img{
     width: 50px;
     cursor: pointer;
 }
+/* Summary como botão */
+.novaCheckList summary {
+    cursor: pointer;
+    list-style: none; /* remove seta padrão */
+    transition: transform 0.1s ease; /* animação suave */
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Efeito de clicar (diminuir e voltar) */
+.novaCheckList summary:active {
+    transform: scale(0.9); /* diminui 10% enquanto pressionado */
+}
+
+/* Imagem dentro do summary */
+.novaCheckList summary img {
+    width: 50px;
+    transition: transform 0.1s ease; /* animação da imagem */
+}
+
+/* Efeito de aparecer do conteúdo */
+.novaCheckList details[open] > label {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    animation: abrir 0.3s ease;
+}
+
+@keyframes abrir {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes abrir {
+  from {
+    opacity: 0;
+    transform: translatex(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
 .novaCheckList details:open >label {
     position: absolute;
     top: 150px;
     left: 70px;
+    animation: abrir 0.3s ease;
 }
 .novaCheckList input {
     background-color: transparent;

@@ -8,27 +8,37 @@
 /* usuarios disponiveis */
 .caixaUser {
     background-color: #2196f3;
-
     position: absolute;
     border-top-right-radius: 30px;
     border-bottom-right-radius:30px ;
     text-align: center;
 }
-.caixaUser p {
-    display: none;
-    position: absolute;
-}
-.caixaUser label div {
-    padding: 0;
-}
 .caixaUser input {
     display: none;
-    padding: 0;
-    margin: 0;
 }
-.caixaUser div img {
+.caixaUser p {
+    position: absolute;
+    display: none;
+}
+.caixaUser label {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.caixaUser label:hover {
+    padding: 0;
+}
+.caixaUser label:hover > img {
+    width: 60px;
+}
+.caixaUser input[type="radio"]:checked ~ img {
+    border:1px solid white;
+}
+.caixaUser img {
     width: 50px;
     cursor: pointer;
+    border-radius: 60px;
+    border: 1px solid transparent;
 }
 /* === Checklist === */
 .checkList {
@@ -84,6 +94,7 @@
 .checkList .excluirItens img {
     width: 15px;
     padding-top: 3px;
+    border-radius: 50px;
 }
 
 /* Botão adicionar usuário */
