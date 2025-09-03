@@ -16,3 +16,56 @@
                 <Label for="teu"><input type="radio" value="teu" name="user" id="teu">Téu</Label>
                 <Label for="sandro"><input type="radio" value="sandro" name="user" id="sandro">Sandro</Label>
             </div>
+
+
+<!-- Seleção de usuário -->
+            <div class="user">
+                <details>
+                    <summary>
+                        <img src="./assets/img/page/index/user.png" alt="Icone de usuario padrão" id="iconeResumo">
+                    </summary>
+                    <div class="caixaUser">
+                        <!-- Cada usuário -->
+                        <label for="cavalo">
+                            <input type="radio" name="user" id="cavalo" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_c">Vincius</p>
+                                <img src="./assets/img/page/index/Cavalo.png" alt="icone de cavalo cartoon">
+                            </div>
+                        </label>
+                        <label for="doninha">
+                            <input type="radio" name="user" id="doninha" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_d">Anderson</p>
+                                <img src="./assets/img/page/index/doninha.png" alt="Icone de doninha cartoon">
+                            </div>
+                        </label>
+                        <label for="gato">
+                            <input type="radio" name="user" id="gato" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_g">Alex</p>
+                                <img src="./assets/img/page/index/gato.png" alt="icone de gato cartoon">
+                            </div>
+                        </label>
+                        <label for="pinguim">
+                            <input type="radio" name="user" id="pinguim" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_p">Eduarda</p>
+                                <img src="./assets/img/page/index/Pinguim.png" alt="Icone de pinguim cartoon">
+                            </div>
+                        </label>
+                        <label for="raposa">
+                            <input type="radio" name="user" id="raposa" value="user">
+                            <div>
+                                <span></span>
+                                <p id="user_r">Alexsandro</p>
+                                <img src="./assets/img/page/index/raposa.png" alt="icone de raposa cartoon">
+                            </div>
+                        </label>
+                    </div>
+                </details>
+            </div>

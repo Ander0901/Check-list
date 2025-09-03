@@ -2,31 +2,34 @@
 .section1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 100px 50px;
+    margin: 0 100px;
     gap: 20px;
 }
+/* usuarios disponiveis */
+.caixaUser {
+    background-color: #2196f3;
 
-/* Nova Check List */
-.novaCheckList {
     position: absolute;
-    left: 50px;
-    top: 160px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px ;
+    text-align: center;
+}
+.caixaUser p {
+    display: none;
+    position: absolute;
+}
+.caixaUser label div {
+    padding: 0;
+}
+.caixaUser input {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.caixaUser div img {
+    width: 50px;
     cursor: pointer;
 }
-.novaCheckList input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid black;
-    padding: 5px;
-}
-.novaCheckList button {
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #137fd9;
-    color: white;
-}
-
 /* === Checklist === */
 .checkList {
     padding: 20px;
@@ -54,13 +57,11 @@
     background-color: #fcd6838c;
     transition: 0.3s;
 }
-
 .checkList ul li .conteinerItens:hover {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-left: 0;
 }
-
 /* Botões */
 .checkList button {
     padding: 5px 10px;
@@ -68,11 +69,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 .checkList button:hover {
     background-color: rgb(223, 223, 223);
 }
-
 /* Botão excluir */
 .checkList li .excluirItens {
     grid-column: 3;
