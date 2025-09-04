@@ -21,14 +21,13 @@
             </div>
             <!-- Menu -->
             <div class="menu">
-                <div class="img" onclick="toggleMenu()">
-                    <img src="./assets/img/global/menu-hamburguer.png" alt="Menu menu-hamburguer" width="50px">
-                </div>
+                <details><summary><img src="./assets/img/global/menu-hamburguer.png" alt="Menu menu-hamburguer" width="50px"></summary>
                 <ul class="menuList">
                     <li><a href="#">Login</a></li>
-                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Perfil</a></li>
                     <li><a href="#">notes</a></li>
                 </ul>
+                </details>
             </div>
             <!-- Opções de navegação -->
             <div class="opções">
@@ -41,11 +40,18 @@
             <div class="novaCheckList">
                 <details>
                     <summary><img src="./assets/img/page/index/adicionar.png" alt=""></summary>
-
-                    <label for="check">
+                    <div>
                         <input type="text" id="text" placeholder="Adicione uma Check List">
                         <button onclick="duplicarChecklist()">Adicionar</button>
-                    </label>
+                        <ul>
+                            <li class="amarelo" value="amarelo"></li>
+                            <li class="verde" value="verde"></li>
+                            <li class="vermelho" value="vermelho"></li>
+                            <li class="azul" value="azul"></li>
+                            <li class="menta" value="menta"></li>
+                            <li class="rosa" value="rosa"></li>
+                        </ul>
+                    </div>
                 </details>
         </div>
         </div>

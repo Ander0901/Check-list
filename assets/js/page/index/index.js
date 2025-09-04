@@ -1,3 +1,12 @@
+document.addEventListener("click", function(event) {
+    // Seleciona todos os <details> que estão abertos
+    document.querySelectorAll("details[open]").forEach((details) => {
+        // Se o clique NÃO foi dentro do <details>, fecha ele
+        if (!details.contains(event.target)) {
+            details.removeAttribute("open");
+        }
+    });
+});
 // Seleciona todos os radios de usuário e o ícone do summary
 const radios = document.querySelectorAll('.caixaUser input[type="radio"]');
 const iconeResumo = document.getElementById('iconeResumo');

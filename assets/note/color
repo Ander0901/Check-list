@@ -8,6 +8,15 @@
 
 #2196f3
 
+background: linear-gradient(100deg, #e08c1a, #ffce5c);  AMARELO
+background: linear-gradient(100deg, #32cd32, #00ced1);  MENTA
+background: linear-gradient(100deg, #c91ae0, #5ccbff);  AZUL
+background: linear-gradient(100deg, #ff69b4, #ba55d3);  ROSA
+background: linear-gradient(100deg, #228b22, #adff2f);  VERDE
+background: linear-gradient(100deg, #ff0000, #8a2be2);  VERMELHO
+
+
+
 <div class="legenda"> 
                 <label for="And"><input type="radio" value="And" name="user" id="And">Anderson</label>
                 <Label for="alex"><input type="radio" value="alex" name="user" id="alex">Alex</Label>
